@@ -1,0 +1,38 @@
+.box40
+{
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      display: inline-block;
+}
+.and{
+      text-align: center;
+}
+.items-icon img {
+      border-radius:50%; /* Biến ảnh thành hình tròn */
+      width: 100px; /* Đảm bảo rằng ảnh vẫn có kích thước cố định */
+      height: 50px;
+      object-fit: cover; /* Đảm bảo ảnh không bị méo khi làm tròn */
+      /* position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); */
+
+  }
+.items-icon h5{
+      text-align: center;
+      font-size: 15px;
+}
+.slider1 img {
+      height: 150;
+     
+  }
+
+.danhmuc {
+      text-align: center;
+}
+
+.product{
+      text-align: center; 
+}

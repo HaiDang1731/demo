@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+    <link rel="stylesheet" href="css/mylayout.css">
+    <link src="js/index.js">
+    <title>trang chi tiet</title>
+</head>
+<body>
+      <section class="myheader">
+    <div class="container py-3">
+        <!-- <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">phone</div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">mail</div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">langue</div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">bag</div>
+        </div> -->
+
+        <div class="row">
+            <div class="col-md-3">
+                  <img src="images/logo.webp" class="img-fluid" alt="logo">
+            </div>
+                 
+            <div class="col-md-4">       
+                  <div class="input-group md-3">
+                        <input type="text" class="form-control" placeholder="Tìm Kiếm" 
+                        aria-label="Tim kiem"aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                  </div>
+            </div>
+
+            <div class="col-md-3">
+                  <div class="row">
+
+                        <div class="col">
+                                  <div class="row">
+                                    <div class="col-3">
+                                      <div class="fs-3 text-danger">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                  </div>
+
+                                    <div class="col-9">
+                                      0123456789<br>
+                                      <strong class="text-danger">Tư Vẫn</strong>
+                                    </div>
+                                  </div>
+                        </div>
+                        <div class="col">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="fs-3 text-danger">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                          </div>
+
+                            <div class="col-9">
+                              Xin Chào<br>
+                             <a href="trangdangnhap.html"><strong class="text-danger">login</strong></a>
+                            </div>
+                          </div>
+                        </div>                
+                  </div>
+            </div>
+
+          <div class="col-md-2">
+                  <div class="row">
+                    <div class="col">
+                      <a href="#" class="position-relative">
+                        <span class="fs-3"><i class="fa-regular fa-heart"></i></span>
+                        
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      0
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </a>
+                    </div>
+                    <div class="col">
+                      <a href="#" class="position-relative">
+                        <span class="fs-3"><i class="fa-solid fa-bag-shopping"></i></span>
+                        
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger " id="cart-items-count">0</span>
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </a>
+                    </div>
+                    <div class="col">
+                      <a href="#" class="position-relative">
+                        <span class="fs-3"><i class="fa-brands fa-weixin"></i></span>
+                        
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      0
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </a>
+                    </div>
+                  </div>
+          </div>
+        </div>
+      </section>
+<!-- andp1 -->
+    <section class="mymainmenu bg-danger ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 text-white py-3">Danh Mục Sản Phẩm</div>
+          <div class="col-md-9">
+            <nav class="navbar navbar-expand-lg bg-danger">
+              <div class="container-fluid">
+                <a class="navbar-brand d-none" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link text-white active" aria-current="page" href="index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Giới Thiệu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sản Phẩm
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-durk" href="trangnhom.html">Phòng Khách</a></li>
+                        <li><a class="dropdown-item text-durk"  href="#">Phòng Ngủ</a></li>
+                        <li><a class="dropdown-item text-durk" href="#">Nhà Bếp</a></li>
+                        <li><a class="dropdown-item text-durk"  href="#">Nhà Vệ Sinh</a></li>
+                        <li><a class="dropdown-item text-durk" href="#">Phòng Giải Trí</a></li>
+                        <li><a class="dropdown-item text-durk"  href="#">Sân Vườn</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white">Tin Tức</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white">Liên Hệ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+                                     <!-- andmenutab -->
+
+      <section class="mycontainer">
+            <div class="container p-4">
+                  <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                              <img src="images/noithatphongkhach/khach1.webp" class="img-fluid w-60 autoHeight" alt="noithatphongkhach">
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 bg-duck">
+                              <figure class="text-center">
+                                    <blockquote class="blockquote">
+                                      <p>CHI TIẾT SẢN PHẨM</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer">
+                                    <cite title="Source Title">Ghế Sofa</cite>
+                                    </figcaption>
+                                  </figure>
+                                  <ul class="list-unstyled">
+                                    <li>xuất sứ : viet nam</li>
+                                    <li>nam san xuat: 2023</li>
+                                    <li>chat  lieu thong thoang</li>
+                                    <li>Sản phẩm nồi dồng cói đá bao test</li>
+                                    <li>chat liêu:
+                                      <ul>
+                                        <li>chất liệu ố zề</li>
+                                        <li>bao chống lửa</li>
+                                        <li>bảo hành 10000000 năm xài hỏng đem tới của hàng cho mới</li>
+                                      </ul>
+                                    </li>
+                                    <li>còn gì chần chờ hốt ngay hốt ngay</li>
+                                  </ul>
+                                  <!-- Thêm vào trang chi tiết sản phẩm -->
+                                    <button class="btn btn-primary add-to-cart-btn">Thêm vào giỏ hàng</button>
+
+                             
+
+                        </div>
+                  </div>
+            </div>
+            </div>
+      </section>
+
+    <section class="myfooter bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h4>Văn Phòng Giao Dịch</h4>
+            <ul class="list-menu">
+                <li class="li_menu"><a href="/" title="Trang chu">Trang Chủ</a></li>
+                <li class="li_menu"><a href="/gioi-thieu" title="Gioi thieu">Giới Thiệu</a></li>
+                <li class="li_menu"><a href="/collections/all" title="San pham">Sản Phẩm</a></li>
+                <li class="li_menu"><a href="/tin-tuc" title="Tin tuc">Tin Tức</a></li>
+                <li class="li_menu"><a href="/lien-he" title="Lien he">Liên Hệ</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Văn Phòng Giao Dịch</h4>
+            <ul class="list-menu">
+                <li class="li_menu"><a href="/" title="Trang chu">Trang Chủ</a></li>
+                <li class="li_menu"><a href="/gioi-thieu" title="Gioi thieu">Giới Thiệu</a></li>
+                <li class="li_menu"><a href="/collections/all" title="San pham">Sản Phẩm</a></li>
+                <li class="li_menu"><a href="/tin-tuc" title="Tin tuc">Tin Tức</a></li>
+                <li class="li_menu"><a href="/lien-he" title="Lien he">Liên Hệ</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Văn Phòng Giao Dịch</h4>
+            <ul class="list-menu">
+                <li class="li_menu"><a href="/" title="Trang chu">Trang Chủ</a></li>
+                <li class="li_menu"><a href="/gioi-thieu" title="Gioi thieu">Giới Thiệu</a></li>
+                <li class="li_menu"><a href="/collections/all" title="San pham">Sản Phẩm</a></li>
+                <li class="li_menu"><a href="/tin-tuc" title="Tin tuc">Tin Tức</a></li>
+                <li class="li_menu"><a href="/lien-he" title="Lien he">Liên Hệ</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Văn Phòng Giao Dịch</h4>
+            <ul class="list-menu">
+                <li class="li_menu"><a href="/" title="Trang chu">Trang Chủ</a></li>
+                <li class="li_menu"><a href="/gioi-thieu" title="Gioi thieu">Giới Thiệu</a></li>
+                <li class="li_menu"><a href="/collections/all" title="San pham">Sản Phẩm</a></li>
+                <li class="li_menu"><a href="/tin-tuc" title="Tin tuc">Tin Tức</a></li>
+                <li class="li_menu"><a href="/lien-he" title="Lien he">Liên Hệ</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-6">
+                <h5>Nội thất Luffy abc</h5>
+                <p class="m-0">Công ty CP một thành viên Luffya abc</p>
+                <p  class="m-0">Địa chỉ:123, P.Mai Dịch, Q. Cầu Giấy, TP Hà Nội</p>
+                <p  class="m-0">Email: buihaidang317@gmail.com </p>
+                <p  class="m-0">Hotline: 0123456789</p>    
+          </div>
+
+          <div class="col-md-6">
+            <h5>Đăng Kí Để Nhận Khuyến Mãi</h5>
+            <div class="input-group md-3">
+              <input type="text" class="form-control" placeholder="Nhập email để nhận khuyến mãi" 
+              aria-label="Nhập email để nhận khuyến mãi"aria-describedby="basic-addon2">
+              <span class="input-group-text bg-danger text-white" id="basic-addon2">Đăng Kí</span>
+            </div>
+            <br>
+            <div>
+              <span class="box40 border border-danger mr-3 text-primary bg-white">
+                <i class="fa-brands fa-facebook-f"></i>
+              </span>
+              <span class="box40 border border-danger mr-3 text-primary bg-white">
+                <i class="fa-brands fa-twitter"></i>
+              </span>
+              <span class="box40 border border-danger mr-3 text-danger bg-white">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </span>
+              <span class="box40 border border-danger text-danger bg-white">
+                <i class="fa-brands fa-youtube"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <span class="and">© Bản quyền thuộc về Luffy Team | Cung cấp bởi LUffY ABC</span>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="js/index.js">
+      
+    </script>
+    
+</body>
+</html>
